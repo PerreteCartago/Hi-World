@@ -1,0 +1,21 @@
+	db ENTEI ; 244
+
+	db  90, 115,  80, 100, 115,  80
+	;   hp  atk  def  spd  sat  sdf
+
+	db FAIRY, DRAGON ; type
+	db 15 ; catch rate
+	db 216 ; base exp
+	db NO_ITEM, NO_ITEM ; items
+	db GENDER_UNKNOWN ; gender ratio
+	db 100 ; unknown 1
+	db 80 ; step cycles to hatch
+	db 5 ; unknown 2
+	INCBIN "gfx/pokemon/entei/front.dimensions"
+	dw NULL, NULL ; unused (beta front/back pics)
+	db GROWTH_SLOW ; growth rate
+	dn EGG_NONE, EGG_NONE ; egg groups
+
+	; tm/hm learnset
+	tmhm DYNAMICPUNCH, HEADBUTT, ROAR, ZAP_CANNON, ROCK_SMASH, LIGHT_SCREEN, REFLECT, SUNNY_DAY, RAZOR_WIND, ROCK_SLIDE, BLIZZARD, DOUBLE_EDGE, HAIL, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, IRON_TAIL, DRAGONBREATH, THUNDER, EARTHQUAKE, RETURN, PSYCHIC_M, SHADOW_BALL, BODY_SLAM, ICE_PUNCH, SLEEP_TALK, FIRE_BLAST, SWIFT, THUNDERPUNCH, SWORDS_DANCE, MEDITATE, REST, MORNING_SUN, FIRE_PUNCH, FURY_CUTTER, SUBSTITUTE, CUT, STRENGTH, FLASH, FLAMETHROWER, THUNDERBOLT, ICE_BEAM
+	; end

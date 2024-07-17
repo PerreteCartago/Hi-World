@@ -1,0 +1,21 @@
+	db HO_OH ; 250
+
+	db 110, 130,  95, 120, 130,  95
+	;   hp  atk  def  spd  sat  sdf
+
+	db STEEL, DRAGON ; type
+	db 5 ; catch rate
+	db 220 ; base exp
+	db SACRED_ASH, SACRED_ASH ; items
+	db GENDER_UNKNOWN ; gender ratio
+	db 100 ; unknown 1
+	db 120 ; step cycles to hatch
+	db 5 ; unknown 2
+	INCBIN "gfx/pokemon/ho_oh/front.dimensions"
+	dw NULL, NULL ; unused (beta front/back pics)
+	db GROWTH_SLOW ; growth rate
+	dn EGG_NONE, EGG_NONE ; egg groups
+
+	; tm/hm learnset
+	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, ROAR, TOXIC, ZAP_CANNON, ROCK_SMASH, LIGHT_SCREEN, REFLECT, SUNNY_DAY, RAZOR_WIND, ROCK_SLIDE, BLIZZARD, DOUBLE_EDGE, PROTECT, ENDURE, FRUSTRATION, SOLARBEAM, IRON_TAIL, DRAGONBREATH, THUNDER, EARTHQUAKE, RETURN, DIG, PSYCHIC_M, SHADOW_BALL, BODY_SLAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SANDSTORM, FIRE_BLAST, SWIFT, THUNDERPUNCH, SWORDS_DANCE, MEDITATE, REST, MORNING_SUN, FIRE_PUNCH, SUBSTITUTE, CUT, FLY, STRENGTH, FLASH, FLAMETHROWER, THUNDERBOLT, ICE_BEAM
+	; end
